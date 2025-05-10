@@ -1,0 +1,50 @@
+# Ignore all IntelliJ IDEA project files
+**/.idea/
+**/*.iml
+
+# Ignore VSCode config
+**/.vscode/
+
+# Ignore Maven target directories
+**/target/
+
+# Ignore Gradle build directories
+**/build/
+
+# Logs
+**/*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+**/.env
+**/*.env
+**/*.key
+**/*.pem
+
+# Ignore compiled class files
+**/*.class
+
+# Ignore temporary files
+**/*~
+**/#*#
+**/.project
+**/.classpath
+**/.settings/
+
+# Optional: ignore specific tools like JRebel, Sonar, etc.
+**/.jrebel/
+**/.sonarlint/
+
+# Ignore node_modules if front-end present
+**/node_modules/
+
+# Ignore coverage reports (e.g. from JaCoCo)
+**/coverage/
+**/jacoco.exec
+
+# Ignore IntelliJ cache (optional)
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
