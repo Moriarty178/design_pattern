@@ -16,7 +16,7 @@ public class DocumentController {
 
     @GetMapping("/read")
     public String readDoc(@RequestParam String path, @RequestParam String role) {
-        Document realDoc = new RealDocument(path);
+        Document realDoc = new RealDocument(path); // dùng như này ể ảm bảo các interface có thể thay thế cho nhau 2 chiều (Dependency Inversion Principle)
 
         Document doc = new LoggingProxyDocument(
                         new CachingProxyDocument(
